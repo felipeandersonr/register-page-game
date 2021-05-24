@@ -1,0 +1,144 @@
+:root {
+    --bgColor: #1E1E1E;
+    --divColor: #171717;
+    --redColor: #F64545;
+    --borderColor: #636363;
+    --textColor: #C4C4C4;
+    --fenceColor: #595959;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Sniglet', cursive;
+    font-style: normal;
+    font-weight: normal;
+    color: #ffff;
+}
+
+body {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+
+    background-color: var(--bgColor);
+}
+
+#login-section {
+    display: flex;
+
+    padding: 1rem;
+    width: 836px;
+    height: 414px;
+
+    background-color: var(--divColor);
+    border-radius: 20px;
+
+    margin-bottom: 50px;
+}
+
+.login {
+    width: 70%;
+    margin: auto;
+
+    display: grid;
+    align-items: center;
+}
+
+input {
+    color: white;
+
+    width: 80%;
+    margin: auto;
+    padding: 1.2rem;
+    margin-bottom: 2rem;
+
+    background-color: var(--divColor);
+
+    border: solid 1px var(--borderColor);
+    border-radius: 0.25rem;
+    outline: 0;
+}
+
+.login-button {
+    border: none;
+    border-radius: 5px;
+
+    padding: 1rem;
+    width: 40%;
+    margin: auto;
+
+    background-color: var(--redColor);
+    color: white;
+
+    margin-top: 2rem;
+}
+
+/*=-=-=-=-=-=-=-=SECTION SCORE-=-=-=-=-=-=-=-=-=*/
+#score-points {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+    width: 80%;
+    margin: auto;
+
+    padding: 2rem;
+
+    background-color: var(--divColor);
+    border-radius: 0px 0px 25px 25px;
+}
+
+#score-points a {
+    color: var(--redColor);
+    text-align: center;
+    text-decoration: underline;
+
+    padding-bottom: 2rem;
+}
+/*=-=-=-=-=-=-=-=/SECTION SCORE-=-=-=-=-=-=-=-=-=*/
+/*=-=-=-=-=-=-=-=SCORE-=-=-=-=-=-=-=-=-=*/
+.data {
+    display: flex;
+    border: 1px solid transparent;
+
+    margin-bottom: 15px;
+}
+
+.data:hover {
+    border-color: var(--redColor);
+    border-radius: 0.25rem;
+}
+
+.data div {
+    padding: 1rem;
+    text-align: left;
+
+    background: rgba(196, 196, 196, 0.18);
+    color: var(--redColor);
+}
+
+.data div:first-child {
+    border-radius: 0.25rem 0rem 0rem 0.25rem;
+    border-right: 2px solid var(--fenceColor);
+}
+
+.data div:last-child {
+    border-radius: 0rem 0.25rem 0.25rem 0rem;
+}
+
+.data .name {
+    width: 350px;
+    text-align: left;
+
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffff;
+}
+/*=-=-=-=-=-=-=-=/SCORE-=-=-=-=-=-=-=-=-=*/
