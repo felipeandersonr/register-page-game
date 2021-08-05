@@ -24,7 +24,7 @@ const DOM = {
     },
 
     clearCards: () => {
-        document.querySelector('#score-points #datas').innerHTML = ''
+        document.querySelector('#score-points #datas').innerHTML = ""
     }
 }
 
